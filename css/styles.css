@@ -1,0 +1,271 @@
+
+.bg-dark {
+    background-color: #5C5048 !important; /*343a40*/
+}
+
+.bg-dark li a:hover {
+  font-size: medium; /*large*/
+  background-color: #5C5048;
+}
+
+.navbar-brand {
+  font-size: x-large;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+p {
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  max-width: 100%;
+}
+
+h2 {
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  margin: 5px;
+}
+
+.col-sm {
+  flex: 1 1 0;
+  width: 0;
+}
+
+img {
+   max-width: 100%;
+/*Inside of whatever it is contained in*/
+}
+
+.col-sm {
+   object-fit: cover;
+   width: 50px;
+   height: 300px;
+}
+
+.col-sm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.col-sm img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+form {
+  padding: 10px;
+}
+
+@media screen and (min-width: 300px) {
+  h1{
+    font-size: small;
+    text-align: center;
+    margin: 5px;
+  }
+  .bg-dark {
+      font-size: small;
+  }
+  .navbar-brand {
+    font-size: medium;
+  }
+
+  .bg-dark li a:hover {
+    font-size: small; /*large*/
+    padding-left: 5px;
+    margin-left: 5px;
+  }
+  .pull-left {
+    font-size: xx-small;
+    font-family: monospace;
+    text-align: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    width: 350px;
+    margin-top: 5px;
+  }
+  footer {
+  	background-color: #555;
+  	color: white;
+  	padding: 15px;
+    padding-top: 3px;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	height: 50px;
+  	position: fixed;
+  }
+  p {
+    display: block;
+    font-size: small;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+  }
+
+  .col-sm {
+     object-fit: cover;
+     width: 50px;
+     height: 90px;
+  }
+
+}
+
+@media screen and (min-width: 480px) {
+  .bg-dark li a:hover {
+    font-size: small; /*large*/
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+
+  h1{
+    font-size: large;
+    text-align: center;
+    margin: 5px;
+  }
+
+
+
+  .pull-left {
+    font-size: small;
+    font-family: monospace;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    width: 600px;
+    margin-top: 5px;
+  }
+
+  footer {
+  	background-color: #555;
+  	color: white;
+  	padding: 10px;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	height: 50px;
+  	position: fixed;
+  }
+
+  section {
+   display: flex;
+  }
+
+  aside {
+   flex: 1
+  }
+
+  article {
+   flex: 3
+  }
+
+  p {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+  }
+
+  .col-sm {
+     object-fit: cover;
+     width: 50px;
+     height: 150px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  h1{
+    font-size: x-large;
+    text-align: center;
+    margin: 5px;
+  }
+  p {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+  }
+
+  .col-sm {
+     object-fit: cover;
+     width: 50px;
+     height: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  p {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 730px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+
+}
+
+
+
+/*
+Basic Expansion
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  Finnish
+</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+  <a class="dropdown-item" href="#">Culture</a>
+  <a class="dropdown-item" href="#">Basics</a>
+</div>
+</li>
+
+
+
+<br>
+<br>
+
+  <h2><i>Verb:
+    <br>
+    <br>
+    -lla + olla = to have </i></h2>
+
+  <br>
+  <br>
+
+<section>
+  <aside>
+  </aside>
+  <article>
+    <p>
+      text.
+    </p>
+  </article>
+  <article>
+    <p>
+      text.
+    </p>
+  </article>
+  <aside>
+  </aside>
+</section>
+
+
+
+*/
