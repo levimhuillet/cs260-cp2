@@ -16,31 +16,43 @@ document.getElementById("tvQuery").addEventListener("click", function(event) {
     results += '<div class="col-md-3">';
     results += '</div>';
     results += '<div class="col-md-3">';
-    results += '<h2>' + json.name + '</h2>';
-    results += '<p>';
-    results += '<img src="' + json.image.medium + '"/>';
-    results += '</p>';
-    if (json.officialSite != null){
-      results += '<p> Official Site: <a href="' + json.officialSite + '">' + json.officialSite + '</p></a>';
-    }
-    if (json.rating.average != null){
-        results += '<p>Average Rating: ' + json.rating.average + '</p>';
+    if (json != null)
+    {
+      results += '<h2>' + json.name + '</h2>';
+      results += '<p>';
+      if (json.image != null)
+      {
+          results += '<img src="' + json.image.medium + '"/>';
+      }
+      results += '</p>';
+      if (json.officialSite != null){
+        results += '<p> Official Site: <a href="' + json.officialSite + '">' + json.officialSite + '</p></a>';
+      }
+      if (json.rating.average != null){
+          results += '<p>Average Rating: ' + json.rating.average + '</p>';
+      }
+      else {
+          results += '<p>Average Rating: <i>No Rating Available</i></p>';
+      }
+      results += '<p> Premiered: ' + json.premiered + '</p>';
+      results += '<p> Status: ' + json.status + '</p>';
+      if (json.network != null)
+      {
+        results += '<p> Network: ' + json.network.name + '</p>';
+      }
+      results += '</div>';
+      results += '<div class="col-md-3">';
+      results += '<br>' + json.summary;
+      results += '</div>';
+      results += '<div class="col-md-9">';
+      results += '</div>';
+
+      results += '</div>';
+      results += '</div>';
     }
     else {
-        results += '<p>Average Rating: <i>No Rating Available</i></p>';
+      results += '<p> Show Not Found </p>';
     }
-    results += '<p> Premiered: ' + json.premiered + '</p>';
-    results += '<p> Status: ' + json.status + '</p>';
-    results += '<p> Network: ' + json.network.name + '</p>';
-    results += '</div>';
-    results += '<div class="col-md-3">';
-    results += '<br>' + json.summary;
-    results += '</div>';
-    results += '<div class="col-md-9">';
-    results += '</div>';
-
-    results += '</div>';
-    results += '</div>';
     document.getElementById("tvOutput").innerHTML = results;
   });
 });
@@ -60,7 +72,7 @@ document.getElementById("tvQueryRecommend").addEventListener("click", function(e
     recommendation = "Made in Abyss";
   }
   else if (recommendationNum === 4) {
-    recommendation = "Mr. Sunshine";
+    recommendation = "Black Mirror";
   }
   else if (recommendationNum === 5) {
     recommendation = "Stranger Things";
@@ -69,13 +81,12 @@ document.getElementById("tvQueryRecommend").addEventListener("click", function(e
     recommendation = "Fullmetal Alchemist";
   }
   else if (recommendationNum === 7) {
-    recommendation = "The Titan Games";
+    recommendation = "Planet Earth";
   }
 
   const value = recommendation;
   if (value === "")
   return;
-  console.log(value);
 
   const url = "http://api.tvmaze.com/singlesearch/shows?q=" + value;
   fetch(url)
@@ -88,31 +99,46 @@ document.getElementById("tvQueryRecommend").addEventListener("click", function(e
     results += '<div class="col-md-3">';
     results += '</div>';
     results += '<div class="col-md-3">';
-    results += '<h2>' + json.name + '</h2>';
-    results += '<p>';
-    results += '<img src="' + json.image.medium + '"/>';
-    results += '</p>';
-    if (json.officialSite != null){
-      results += '<p> Official Site: <a href="' + json.officialSite + '">' + json.officialSite + '</p></a>';
-    }
-    if (json.rating.average != null){
-        results += '<p>Average Rating: ' + json.rating.average + '</p>';
+    if (json != null)
+    {
+      results += '<h2>' + json.name + '</h2>';
+      results += '<p>';
+      if (json.image != null)
+      {
+        results += '<img src="' + json.image.medium + '"/>';
+      }
+      results += '</p>';
+      if (json.officialSite != null)
+      {
+        results += '<p> Official Site: <a href="' + json.officialSite + '">' + json.officialSite + '</p></a>';
+      }
+      if (json.rating != null){
+          results += '<p>Average Rating: ' + json.rating.average + '</p>';
+      }
+      else {
+          results += '<p>Average Rating: <i>No Rating Available</i></p>';
+      }
+      results += '<p> Premiered: ' + json.premiered + '</p>';
+      results += '<p> Status: ' + json.status + '</p>';
+      if (json.network != null)
+      {
+        results += '<p> Network: ' + json.network.name + '</p>';
+      }
+      results += '</div>';
+      results += '<div class="col-md-3">';
+      results += '<br>' + json.summary;
+      results += '</div>';
+      results += '<div class="col-md-9">';
+      results += '</div>';
+
+      results += '</div>';
+      results += '</div>';
     }
     else {
-        results += '<p>Average Rating: <i>No Rating Available</i></p>';
+      results += '<p> Show Not Found </p>';
     }
-    results += '<p> Premiered: ' + json.premiered + '</p>';
-    results += '<p> Status: ' + json.status + '</p>';
-    results += '<p> Network: ' + json.network.name + '</p>';
-    results += '</div>';
-    results += '<div class="col-md-3">';
-    results += '<br>' + json.summary;
-    results += '</div>';
-    results += '<div class="col-md-9">';
-    results += '</div>';
 
-    results += '</div>';
-    results += '</div>';
+
     document.getElementById("tvOutput").innerHTML = results;
   });
 });
