@@ -1,10 +1,11 @@
-
 .bg-dark {
-    background-color: #5C5048 !important; /*343a40*/
+  background-color: #5C5048 !important;
+  /*343a40*/
 }
 
 .bg-dark li a:hover {
-  font-size: medium; /*large*/
+  font-size: medium;
+  /*large*/
   background-color: #5C5048;
 }
 
@@ -38,26 +39,27 @@ h2 {
 }
 
 img {
-   max-width: 100%;
-/*Inside of whatever it is contained in*/
+  max-width: 100%;
+  /*Inside of whatever it is contained in*/
 }
 
 .col-sm {
-   object-fit: cover;
-   width: 50px;
-   height: 300px;
+  object-fit: cover;
+  width: 50px;
+  height: 300px;
 }
 
 .col-sm {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
 }
+
 .col-sm img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
 }
 
 form {
@@ -65,23 +67,27 @@ form {
 }
 
 @media screen and (min-width: 300px) {
-  h1{
+  h1 {
     font-size: small;
     text-align: center;
     margin: 5px;
   }
+
   .bg-dark {
-      font-size: small;
+    font-size: small;
   }
+
   .navbar-brand {
     font-size: medium;
   }
 
   .bg-dark li a:hover {
-    font-size: small; /*large*/
+    font-size: small;
+    /*large*/
     padding-left: 5px;
     margin-left: 5px;
   }
+
   .pull-left {
     font-size: xx-small;
     font-family: monospace;
@@ -93,17 +99,19 @@ form {
     width: 350px;
     margin-top: 5px;
   }
+
   footer {
-  	background-color: #555;
-  	color: white;
-  	padding: 15px;
+    background-color: #555;
+    color: white;
+    padding: 15px;
     padding-top: 3px;
-  	bottom: 0;
-  	left: 0;
-  	right: 0;
-  	height: 50px;
-  	position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    position: fixed;
   }
+
   p {
     display: block;
     font-size: small;
@@ -114,27 +122,25 @@ form {
   }
 
   .col-sm {
-     object-fit: cover;
-     width: 50px;
-     height: 90px;
+    object-fit: cover;
+    width: 50px;
+    height: 90px;
   }
-
 }
 
 @media screen and (min-width: 480px) {
   .bg-dark li a:hover {
-    font-size: small; /*large*/
+    font-size: small;
+    /*large*/
     padding-left: 0px;
     margin-left: 0px;
   }
 
-  h1{
+  h1 {
     font-size: large;
     text-align: center;
     margin: 5px;
   }
-
-
 
   .pull-left {
     font-size: small;
@@ -149,26 +155,26 @@ form {
   }
 
   footer {
-  	background-color: #555;
-  	color: white;
-  	padding: 10px;
-  	bottom: 0;
-  	left: 0;
-  	right: 0;
-  	height: 50px;
-  	position: fixed;
+    background-color: #555;
+    color: white;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    position: fixed;
   }
 
   section {
-   display: flex;
+    display: flex;
   }
 
   aside {
-   flex: 1
+    flex: 1
   }
 
   article {
-   flex: 3
+    flex: 3
   }
 
   p {
@@ -180,18 +186,19 @@ form {
   }
 
   .col-sm {
-     object-fit: cover;
-     width: 50px;
-     height: 150px;
+    object-fit: cover;
+    width: 50px;
+    height: 150px;
   }
 }
 
 @media screen and (min-width: 600px) {
-  h1{
+  h1 {
     font-size: x-large;
     text-align: center;
     margin: 5px;
   }
+
   p {
     display: block;
     text-align: center;
@@ -201,9 +208,9 @@ form {
   }
 
   .col-sm {
-     object-fit: cover;
-     width: 50px;
-     height: 200px;
+    object-fit: cover;
+    width: 50px;
+    height: 200px;
   }
 }
 
@@ -217,24 +224,22 @@ form {
   }
 }
 
-@media screen and (min-width: 900px) {
-
-}
+@media screen and (min-width: 900px) {}
 
 .return {
-    position: fixed;
-    list-style-type: none;
-    text-align: center;
-    bottom: 100px;
-    left: 50px;
-    margin: 0px;
-    padding: 0px;
-    margin-top: 0px;
-    margin-left: 0px;
-    width: 200px;
-    background-color: #337194;
-    color: black;
-    padding: 2px;
+  position: fixed;
+  list-style-type: none;
+  text-align: center;
+  bottom: 100px;
+  left: 50px;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  width: 200px;
+  background-color: #337194;
+  color: black;
+  padding: 2px;
 }
 
 .return a {
