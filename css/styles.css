@@ -1,23 +1,23 @@
+/* Bootstrap*/
+/* Navbar */
 .bg-dark {
   background-color: #5C5048 !important;
   /*343a40*/
-}
-
-.bg-dark li a:hover {
-  font-size: medium;
-  /*large*/
-  background-color: #5C5048;
 }
 
 .navbar-brand {
   font-size: x-large;
 }
 
+/*Body*/
 h1 {
   font-weight: bold;
+  font-size: 36px;
+  padding-left: 40px;
 }
 
 p {
+  font-size: small;
   display: block;
   text-align: center;
   margin-left: auto;
@@ -33,24 +33,23 @@ h2 {
   margin: 5px;
 }
 
+/* Input */
+form {
+  padding-left: 40px;
+}
+
+/*Output*/
+img {
+  max-width: 100%;
+}
+
 .col-sm {
   flex: 1 1 0;
   width: 0;
-}
-
-img {
-  max-width: 100%;
-  /*Inside of whatever it is contained in*/
-}
-
-.col-sm {
+  display: flex;
   object-fit: cover;
   width: 50px;
   height: 300px;
-}
-
-.col-sm {
-  display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden
@@ -62,170 +61,21 @@ img {
   min-height: 100%
 }
 
-form {
-  padding: 10px;
+/*Footer*/
+footer {
+  text-align: center;
+  background-color: #555;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  padding: 20px;
+  font-size: small;
+  font-family: monospace;
 }
 
-@media screen and (min-width: 300px) {
-  h1 {
-    font-size: small;
-    text-align: center;
-    margin: 5px;
-  }
-
-  .bg-dark {
-    font-size: small;
-  }
-
-  .navbar-brand {
-    font-size: medium;
-  }
-
-  .bg-dark li a:hover {
-    font-size: small;
-    /*large*/
-    padding-left: 5px;
-    margin-left: 5px;
-  }
-
-  .pull-left {
-    font-size: xx-small;
-    font-family: monospace;
-    text-align: left;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
-    width: 350px;
-    margin-top: 5px;
-  }
-
-  footer {
-    background-color: #555;
-    color: white;
-    padding: 15px;
-    padding-top: 3px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-    position: fixed;
-  }
-
-  p {
-    display: block;
-    font-size: small;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-  }
-
-  .col-sm {
-    object-fit: cover;
-    width: 50px;
-    height: 90px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .bg-dark li a:hover {
-    font-size: small;
-    /*large*/
-    padding-left: 0px;
-    margin-left: 0px;
-  }
-
-  h1 {
-    font-size: large;
-    text-align: center;
-    margin: 5px;
-  }
-
-  .pull-left {
-    font-size: small;
-    font-family: monospace;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 5px;
-    width: 600px;
-    margin-top: 5px;
-  }
-
-  footer {
-    background-color: #555;
-    color: white;
-    padding: 10px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-    position: fixed;
-  }
-
-  section {
-    display: flex;
-  }
-
-  aside {
-    flex: 1
-  }
-
-  article {
-    flex: 3
-  }
-
-  p {
-    display: block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 450px;
-  }
-
-  .col-sm {
-    object-fit: cover;
-    width: 50px;
-    height: 150px;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  h1 {
-    font-size: x-large;
-    text-align: center;
-    margin: 5px;
-  }
-
-  p {
-    display: block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 500px;
-  }
-
-  .col-sm {
-    object-fit: cover;
-    width: 50px;
-    height: 200px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  p {
-    display: block;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 730px;
-  }
-}
-
-@media screen and (min-width: 900px) {}
-
+/* Return to Landing Page Button */
 .return {
   position: fixed;
   list-style-type: none;
@@ -252,4 +102,48 @@ form {
   background-color: #000000;
   color: white;
   text-decoration: none;
+}
+
+/* Media Queries */
+@media(max-width: 600px) {
+
+  /* Navbar */
+  .navbar-brand {
+    font-size: large;
+  }
+
+  /* Body */
+  h1 {
+    font-size: medium;
+    text-align: center;
+    margin: 5px;
+  }
+
+  p {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: none;
+  }
+
+  /* Input */
+  form {
+    padding-left: 15px;
+    margin: auto;
+    text-align: center;
+  }
+
+  /* Return to Landing Page Button*/
+  .return {
+    width: 20%;
+    max-width: 200px;
+  }
+}
+
+@media(min-width: 600px) and (max-width: 1000px) {
+
+  /* Header*/
+  h1 {
+    padding-left: 10%;
+    font-size: 25px;
+  }
 }
